@@ -35903,7 +35903,7 @@
           "posY": 90,
           "posZ": 10,
           "dimension": 0,
-          "range": 5,
+          "range": 10,
           "visible": false,
           "hideInfo": false,
           "taskID": "bq_standard:location"
@@ -36234,12 +36234,12 @@
         "OreDict": "",
         "Damage": 0
       },
-      "visibility": "HIDDEN",
+      "visibility": "UNLOCKED",
       "tasks": [
         {
           "partialMatch": true,
           "ignoreNBT": false,
-          "consume": true,
+          "consume": false,
           "autoConsume": false,
           "requiredItems": [
             {
