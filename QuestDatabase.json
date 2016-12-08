@@ -48,7 +48,9 @@
         }
       ],
       "rewards": [],
-      "preRequisites": []
+      "preRequisites": [
+        530
+      ]
     },
     {
       "questID": 1,
@@ -38153,6 +38155,156 @@
       ]
     },
     {
+      "questID": 498,
+      "name": "What is this?",
+      "description": "Welcome to Stone Legion Server!\n\nMake sure you check out the rules, commands, and more by typing /help in game.\n\nThis is a basic Location quest. \n\nJust climb the ladder inside the Lighthouse to the top to complete this quest.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "ProjRed|Illumination:projectred.illumination.cagelamp2.inv",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 8
+      },
+      "visibility": "NORMAL",
+      "tasks": [
+        {
+          "name": "Top of the Lighthouse",
+          "posX": -7,
+          "posY": 90,
+          "posZ": 10,
+          "dimension": 0,
+          "range": 5,
+          "visible": false,
+          "hideInfo": false,
+          "taskID": "bq_standard:location"
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:red_flower",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": []
+    },
+    {
+      "questID": 499,
+      "name": "I\u0027m a little hungry.",
+      "description": "You might of been already a bit silly and been sprinting and jumping around...\n\nOur biggest tip is to never do these till you understand the food system completely and that will take sometime to understand.\n\nThis is a basic retrieve quest. Find the Berries listed.\n\nYou can find all the Berries within the spawn area that goes out 200 blocks in all directions.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Natura:berry",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "NORMAL",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Natura:berry",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 2
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "Natura:berry",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 2
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        }
+      ],
+      "preRequisites": [
+        498
+      ]
+    },
+    {
       "questID": 500,
       "name": "First things first",
       "description": "As usual. In order to get started with bees, you need a few basic things. Most important... a scoop.",
@@ -40287,6 +40439,90 @@
       ],
       "preRequisites": [
         509
+      ]
+    },
+    {
+      "questID": 529,
+      "name": "Time to leave this place!",
+      "description": "You should now leave this are and explore the world. Go 200+ Blocks away from spawn and break some dirt!\n\nPlease Note:\n- We hope you will consider making a base at least 1,000 Blocks away from 0,0 (spawn).\n- We hope you will consider not building near another player under 400 blocks without their permission.\n\nDon\u0027t forget to use /help and have a fun and safe time.\n\nWarning: Don\u0027t venture at night for a while!",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "minecraft:dirt",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "NORMAL",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": true,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:dirt",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        499
+      ]
+    },
+    {
+      "questID": 530,
+      "name": "Portals??",
+      "description": "Overtime you might be asked about Portals and to build them. \n\nYou can\u0027t actually build portals on this server. Instead later on in the Stone Legion Quests you will get a quest when you have completed certain quests to unlock the portals themselves and go on an adventure. So keep an eye here in the future.\n\nYou are now done our Introduction Quests. Please go to Tier 0: It Begins Age!\n\n(To finish this Quest type just click the red x on the screen)",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "GraviSuite:BlockRelocatorPortal",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "NORMAL",
+      "tasks": [
+        {
+          "taskID": "bq_standard:checkbox"
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        529
       ]
     },
     {
@@ -44837,7 +45073,28 @@
     {
       "name": "Stone Legion",
       "description": "additional quests overtime, make sure you check often here if your progression some how gets stuck.",
-      "quests": []
+      "quests": [
+        {
+          "id": 498,
+          "x": 0,
+          "y": 0
+        },
+        {
+          "id": 499,
+          "x": 36,
+          "y": 0
+        },
+        {
+          "id": 529,
+          "x": 72,
+          "y": 0
+        },
+        {
+          "id": 530,
+          "x": 108,
+          "y": 0
+        }
+      ]
     },
     {
       "name": "Tier 0 - It begins",
