@@ -38155,7 +38155,7 @@
       ]
     },
     {
-      "questID": 498,
+      "questID": 1500,
       "name": "What is this?",
       "description": "Welcome to Stone Legion Server!\n\nMake sure you check out the rules, commands, and more by typing /help in game.\n\nThis is a basic Location quest. \n\nJust climb the ladder inside the Lighthouse to the top to complete this quest.",
       "isMain": false,
@@ -38209,7 +38209,7 @@
       "preRequisites": []
     },
     {
-      "questID": 499,
+      "questID": 1501,
       "name": "I\u0027m a little hungry.",
       "description": "You might of been already a bit silly and been sprinting and jumping around...\n\nOur biggest tip is to never do these till you understand the food system completely and that will take sometime to understand.\n\nThis is a basic retrieve quest. Find the Berries listed.\n\nYou can find all the Berries within the spawn area that goes out 200 blocks in all directions.",
       "isMain": false,
@@ -38301,7 +38301,7 @@
         }
       ],
       "preRequisites": [
-        498
+        1500
       ]
     },
     {
@@ -40442,7 +40442,7 @@
       ]
     },
     {
-      "questID": 529,
+      "questID": 1502,
       "name": "Time to leave this place!",
       "description": "You should now leave this are and explore the world. Go 200+ Blocks away from spawn and break some dirt!\n\nPlease Note:\n- We hope you will consider making a base at least 1,000 Blocks away from 0,0 (spawn).\n- We hope you will consider not building near another player under 400 blocks without their permission.\n\nDon\u0027t forget to use /help and have a fun and safe time.\n\nWarning: Don\u0027t venture at night for a while!",
       "isMain": false,
@@ -40486,11 +40486,11 @@
       ],
       "rewards": [],
       "preRequisites": [
-        499
+        1501
       ]
     },
     {
-      "questID": 530,
+      "questID": 1503,
       "name": "Portals??",
       "description": "Overtime you might be asked about Portals and to build them. \n\nYou can\u0027t actually build portals on this server. Instead later on in the Stone Legion Quests you will get a quest when you have completed certain quests to unlock the portals themselves and go on an adventure. So keep an eye here in the future.\n\nYou are now done our Introduction Quests. Please go to Tier 0: It Begins Age!\n\n(To finish this Quest type just click the red x on the screen)",
       "isMain": false,
@@ -40522,11 +40522,11 @@
       ],
       "rewards": [],
       "preRequisites": [
-        529
+        1502
       ]
     },
     {
-      "questID": 531,
+      "questID": 1504,
       "name": "Nether Portal",
       "description": "No Description",
       "isMain": false,
@@ -40556,7 +40556,7 @@
       "preRequisites": []
     },
     {
-      "questID": 532,
+      "questID": 1505,
       "name": "Twilight Forest Portal",
       "description": "No Description",
       "isMain": false,
@@ -40586,7 +40586,7 @@
       "preRequisites": []
     },
     {
-      "questID": 533,
+      "questID": 1506,
       "name": "The End Portal",
       "description": "No Description",
       "isMain": false,
@@ -40616,7 +40616,7 @@
       "preRequisites": []
     },
     {
-      "questID": 534,
+      "questID": 1507,
       "name": "Where is my Willagers?",
       "description": "No Description",
       "isMain": false,
@@ -45195,42 +45195,42 @@
       "description": "additional quests overtime, make sure you check often here if your progression some how gets stuck.",
       "quests": [
         {
-          "id": 498,
+          "id": 1500,
           "x": 0,
           "y": 0
         },
         {
-          "id": 499,
+          "id": 1501,
           "x": 36,
           "y": 0
         },
         {
-          "id": 529,
+          "id": 1502,
           "x": 72,
           "y": 0
         },
         {
-          "id": 530,
+          "id": 1503,
           "x": 108,
           "y": 0
         },
         {
-          "id": 531,
+          "id": 1504,
           "x": 108,
           "y": 32
         },
         {
-          "id": 532,
+          "id": 1505,
           "x": 140,
           "y": 0
         },
         {
-          "id": 533,
+          "id": 1506,
           "x": 140,
           "y": 32
         },
         {
-          "id": 534,
+          "id": 1507,
           "x": 0,
           "y": 64
         }
