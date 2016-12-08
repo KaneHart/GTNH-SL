@@ -44835,6 +44835,11 @@
   ],
   "questLines": [
     {
+      "name": "Stone Legion",
+      "description": "additional quests overtime, make sure you check often here if your progression some how gets stuck.",
+      "quests": []
+    },
+    {
       "name": "Tier 0 - It begins",
       "description": "The very first Tier, Tier zero. This chapter will introduce you to the basic mechanics of this modpack. Mods covered: Vanilla, Pam\u0027s Harvestcraft.",
       "quests": [
@@ -45751,11 +45756,6 @@
           "id": 126,
           "x": 0,
           "y": 0
-        },
-        {
-          "id": 498,
-          "x": 384,
-          "y": 116
         }
       ]
     },
