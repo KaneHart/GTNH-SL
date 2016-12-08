@@ -1,5 +1,5 @@
 {
-  "editMode": true,
+  "editMode": false,
   "hardcore": false,
   "defLives": 3,
   "maxLives": 10,
@@ -49,7 +49,8 @@
       ],
       "rewards": [],
       "preRequisites": [
-        530
+        530,
+        1503
       ]
     },
     {
@@ -17757,7 +17758,8 @@
       ],
       "preRequisites": [
         224,
-        495
+        495,
+        104
       ]
     },
     {
@@ -35869,6 +35871,60 @@
       ]
     },
     {
+      "questID": 1500,
+      "name": "What is this?",
+      "description": "Welcome to Stone Legion Server!\n\nMake sure you check out the rules, commands, and more by typing /help in game.\n\nThis is a basic Location quest. \n\nJust climb the ladder inside the Lighthouse to the top to complete this quest.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "ProjRed|Illumination:projectred.illumination.cagelamp2.inv",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 8
+      },
+      "visibility": "NORMAL",
+      "tasks": [
+        {
+          "name": "Top of the Lighthouse",
+          "posX": -7,
+          "posY": 90,
+          "posZ": 10,
+          "dimension": 0,
+          "range": 5,
+          "visible": false,
+          "hideInfo": false,
+          "taskID": "bq_standard:location"
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:red_flower",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": []
+    },
+    {
       "questID": 477,
       "name": "Upgrade #6: Upgrade Tier 7",
       "description": "To process the most advanced Materials like Neutronium, Fluxed-Electrum or Awakened Draconium you need more than 7200K. Upgrade your EBF to 9001k. (OVER 9000!!!)",
@@ -35924,6 +35980,102 @@
       ],
       "preRequisites": [
         476
+      ]
+    },
+    {
+      "questID": 1501,
+      "name": "I\u0027m a little hungry.",
+      "description": "You might of been already a bit silly and been sprinting and jumping around...\n\nOur biggest tip is to never do these till you understand the food system completely and that will take sometime to understand.\n\nThis is a basic retrieve quest. Find the Berries listed.\n\nYou can find all the Berries within the spawn area that goes out 200 blocks in all directions.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Natura:berry",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": false,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "Natura:berry",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 2
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [
+        {
+          "choices": [
+            {
+              "id": "Natura:berry",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 0
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 1
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 3
+            },
+            {
+              "id": "Natura:berry",
+              "Count": 5,
+              "OreDict": "",
+              "Damage": 2
+            }
+          ],
+          "rewardID": "bq_standard:choice"
+        }
+      ],
+      "preRequisites": [
+        1500
       ]
     },
     {
@@ -36058,9 +36210,57 @@
       ]
     },
     {
+      "questID": 1502,
+      "name": "Time to leave this place!",
+      "description": "You should now leave this are and explore the world. Go 200+ Blocks away from spawn and break some dirt!\n\nPlease Note:\n- We hope you will consider making a base at least 1,000 Blocks away from 0,0 (spawn).\n- We hope you will consider not building near another player under 400 blocks without their permission.\n\nDon\u0027t forget to use /help and have a fun and safe time.\n\nWarning: Don\u0027t venture at night for a while!",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "minecraft:dirt",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "HIDDEN",
+      "tasks": [
+        {
+          "partialMatch": true,
+          "ignoreNBT": false,
+          "consume": true,
+          "autoConsume": false,
+          "requiredItems": [
+            {
+              "id": "minecraft:dirt",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 0
+            }
+          ],
+          "taskID": "bq_standard:retrieval"
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        1501
+      ]
+    },
+    {
       "questID": 479,
       "name": "THE NETHER",
-      "description": "Now more dangerous with Extra Hardcore Infernal Mobs. Have fun and take care.",
+      "description": "Now more dangerous with Extra Hardcore Infernal Mobs. Have fun and take care.\n\nWARNING: You Can\u0027t Build The Portal. Check Stone Legion Section once you completed it.",
       "isMain": true,
       "isSilent": false,
       "lockedProgress": false,
@@ -36218,6 +36418,42 @@
       ]
     },
     {
+      "questID": 1503,
+      "name": "Portals??",
+      "description": "Overtime you might be asked about Portals and to build them. \n\nYou can\u0027t actually build portals on this server. Instead later on in the Stone Legion Quests you will get a quest when you have completed certain quests to unlock the portals themselves and go on an adventure. So keep an eye here in the future.\n\nYou are now done our Introduction Quests. Please go to Tier 0: It Begins Age!\n\n(To finish this Quest type just click the red x on the screen)",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "TwilightForest:tile.TFPortal",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "taskID": "bq_standard:checkbox"
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        1502
+      ]
+    },
+    {
       "questID": 480,
       "name": "Malachite",
       "description": "Another Copper source  is \"Malachite\" and can be found between y 10 and 40. This Vein contains more Iron Ore variants like \"Brown Limonite\", \"Yellow Limonite\" and \"Banded Iron Ore\".",
@@ -36308,6 +36544,74 @@
       ]
     },
     {
+      "questID": 1504,
+      "name": "Nether Portal",
+      "description": "Now more dangerous with Extra Hardcore Infernal Mobs. Have fun and take care.\n\nYou should explore somewhere south west of the Light House far away and look for the Nether Portal. The legend is told you need to bring a flint and steel with you.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "minecraft:flowing_lava",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "HIDDEN",
+      "tasks": [
+        {
+          "name": "Nether Portal",
+          "posX": -2000,
+          "posY": 64,
+          "posZ": 2000,
+          "dimension": 0,
+          "range": 100,
+          "visible": false,
+          "hideInfo": false,
+          "taskID": "bq_standard:location"
+        },
+        {
+          "name": "The Nether",
+          "posX": 0,
+          "posY": 0,
+          "posZ": 0,
+          "dimension": -1,
+          "range": -1,
+          "visible": false,
+          "hideInfo": false,
+          "taskID": "bq_standard:location"
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 2
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        1503,
+        479
+      ]
+    },
+    {
       "questID": 481,
       "name": "Creosote Oil",
       "description": "I guess you already processed a bit of wood into charcoal and wonder what you can do with all this Creosote Oil? \nWell you can burn it in the normal furnace to cook your food or you can make more torches with it. Later in the LV age you probably should run Diesel Generators with it.",
@@ -36341,6 +36645,74 @@
       "rewards": [],
       "preRequisites": [
         24
+      ]
+    },
+    {
+      "questID": 1505,
+      "name": "Twilight Forest Portal",
+      "description": "Where I come from Vampires don\u0027t sparkle and fairy tales don\u0027t exist. Well this story has a one happy ending as there is a Fairy Tale called Twilight Forest. \n\nSomewhere far North East of the Light House there is rumors to be a special portal in a tree that can take you away to this Fairy Tale World. \n\nSome the rumors also included that you should being an aluminium dust with you.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "EnderIO:blockLiquid_sunshine",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "HIDDEN",
+      "tasks": [
+        {
+          "name": "Twilight Forest",
+          "posX": -2000,
+          "posY": 64,
+          "posZ": -2000,
+          "dimension": 0,
+          "range": 100,
+          "visible": false,
+          "hideInfo": false,
+          "taskID": "bq_standard:location"
+        },
+        {
+          "name": "Twilight Forest",
+          "posX": 0,
+          "posY": 0,
+          "posZ": 0,
+          "dimension": -7,
+          "range": -1,
+          "visible": false,
+          "hideInfo": false,
+          "taskID": "bq_standard:location"
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 4
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        1503,
+        103
       ]
     },
     {
@@ -36514,6 +36886,74 @@
       ]
     },
     {
+      "questID": 1506,
+      "name": "The End Portal",
+      "description": "No Description",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "TConstruct:fluid.ender",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "HIDDEN",
+      "tasks": [
+        {
+          "name": "End Portal",
+          "posX": 2000,
+          "posY": 64,
+          "posZ": -2000,
+          "dimension": 0,
+          "range": 100,
+          "visible": false,
+          "hideInfo": false,
+          "taskID": "bq_standard:location"
+        },
+        {
+          "name": "The End",
+          "posX": 0,
+          "posY": 0,
+          "posZ": 0,
+          "dimension": 1,
+          "range": -1,
+          "visible": false,
+          "hideInfo": false,
+          "taskID": "bq_standard:location"
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "enhancedlootbags:lootbag",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 5
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        1503,
+        89
+      ]
+    },
+    {
       "questID": 483,
       "name": "Gardener",
       "description": "If you wonder: Why I never get Seeds when destroying Grass? You are right. Try to work with your new Mattock on the Grass Blocks that do not have water anywhere nearby to find some Seeds.",
@@ -36668,6 +37108,197 @@
       ],
       "preRequisites": [
         36
+      ]
+    },
+    {
+      "questID": 1507,
+      "name": "Where is my Willagers?",
+      "description": "So you might of noticed there has not been any Villagers or Villages around. This is because a very long long time ago there was a Zombie outbreak and ended up killing all the Villagers and leveling down their homes. Overtime we ended up coming up with a formula for the cure but almost no one had the skill to create it. Lucky for us we found that we found if we can kill many Zombies we might free one of the few last Villagers remaining.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": 86400,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "minecraft:spawn_egg",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 120
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "target": "Zombie",
+          "required": 100,
+          "subtypes": true,
+          "ignoreNBT": true,
+          "targetNBT": {
+            "ForgeData:10": {},
+            "Attributes:9": [
+              {
+                "Base:6": 0.0,
+                "Name:8": "weapon.penetrateArmor"
+              },
+              {
+                "Base:6": 3.0,
+                "Name:8": "weapon.daze"
+              },
+              {
+                "Base:6": 0.0,
+                "Name:8": "weapon.attackSpeed"
+              },
+              {
+                "Base:6": 0.0,
+                "Name:8": "weapon.mountedBonus"
+              },
+              {
+                "Base:6": -2.0,
+                "Name:8": "tc.mobmod"
+              },
+              {
+                "Base:6": 20.0,
+                "Name:8": "generic.maxHealth"
+              },
+              {
+                "Base:6": 0.0,
+                "Name:8": "generic.knockbackResistance"
+              },
+              {
+                "Base:6": 0.23000000417232513,
+                "Name:8": "generic.movementSpeed"
+              },
+              {
+                "Base:6": 40.0,
+                "Name:8": "generic.followRange"
+              },
+              {
+                "Base:6": 3.0,
+                "Name:8": "generic.attackDamage"
+              },
+              {
+                "Base:6": 0.014695364747913386,
+                "Name:8": "zombie.spawnReinforcements"
+              }
+            ],
+            "Invulnerable:1": 0,
+            "PortalCooldown:3": 0,
+            "AbsorptionAmount:5": 0.0,
+            "FallDistance:5": 0.0,
+            "DeathTime:2": 0,
+            "DropChances:9": [
+              0.08500000089406967,
+              0.08500000089406967,
+              0.08500000089406967,
+              0.08500000089406967,
+              0.08500000089406967
+            ],
+            "PersistenceRequired:1": 0,
+            "HealF:5": 20.0,
+            "id:8": "Zombie",
+            "ConversionTime:3": -1,
+            "Motion:9": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Leashed:1": 0,
+            "UUIDLeast:4": 1964264314805652359,
+            "Health:2": 20,
+            "Dimension:3": 0,
+            "OnGround:1": 0,
+            "Air:2": 0,
+            "Rotation:9": [
+              0.0,
+              0.0
+            ],
+            "CreatureInfusion:10": {
+              "PlayerInfusions:11": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "tumorWarpTemp:3": 0,
+              "InfusionCosts:10": {
+                "Aspects:9": []
+              },
+              "Infusions:11": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "toggleClimb:1": 0,
+              "toggleInvisible:1": 0,
+              "tumorWarp:3": 0,
+              "tumorWarpPermanent:3": 0,
+              "sitting:1": 0
+            },
+            "Equipment:9": [
+              {},
+              {},
+              {},
+              {},
+              {}
+            ],
+            "UUIDMost:4": 1513819026420888,
+            "CustomName:8": "",
+            "CanBreakDoors:1": 0,
+            "Pos:9": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "Fire:2": 0,
+            "CanPickUpLoot:1": 0,
+            "HurtTime:2": 0,
+            "AttackTime:2": 0,
+            "CustomNameVisible:1": 0
+          },
+          "taskID": "bq_standard:hunt"
+        }
+      ],
+      "rewards": [
+        {
+          "rewards": [
+            {
+              "id": "minecraft:spawn_egg",
+              "Count": 1,
+              "OreDict": "",
+              "Damage": 120
+            }
+          ],
+          "rewardID": "bq_standard:item"
+        }
+      ],
+      "preRequisites": [
+        914
       ]
     },
     {
@@ -38152,156 +38783,6 @@
       ],
       "preRequisites": [
         478
-      ]
-    },
-    {
-      "questID": 1500,
-      "name": "What is this?",
-      "description": "Welcome to Stone Legion Server!\n\nMake sure you check out the rules, commands, and more by typing /help in game.\n\nThis is a basic Location quest. \n\nJust climb the ladder inside the Lighthouse to the top to complete this quest.",
-      "isMain": false,
-      "isSilent": false,
-      "lockedProgress": false,
-      "simultaneous": false,
-      "globalParticipation": 0.0,
-      "globalQuest": false,
-      "globalShare": true,
-      "autoClaim": false,
-      "repeatTime": -1,
-      "sounds": {
-        "complete": "random.levelup",
-        "update": "random.levelup"
-      },
-      "logic": "AND",
-      "taskLogic": "AND",
-      "icon": {
-        "id": "ProjRed|Illumination:projectred.illumination.cagelamp2.inv",
-        "Count": 1,
-        "OreDict": "",
-        "Damage": 8
-      },
-      "visibility": "NORMAL",
-      "tasks": [
-        {
-          "name": "Top of the Lighthouse",
-          "posX": -7,
-          "posY": 90,
-          "posZ": 10,
-          "dimension": 0,
-          "range": 5,
-          "visible": false,
-          "hideInfo": false,
-          "taskID": "bq_standard:location"
-        }
-      ],
-      "rewards": [
-        {
-          "rewards": [
-            {
-              "id": "minecraft:red_flower",
-              "Count": 1,
-              "OreDict": "",
-              "Damage": 0
-            }
-          ],
-          "rewardID": "bq_standard:item"
-        }
-      ],
-      "preRequisites": []
-    },
-    {
-      "questID": 1501,
-      "name": "I\u0027m a little hungry.",
-      "description": "You might of been already a bit silly and been sprinting and jumping around...\n\nOur biggest tip is to never do these till you understand the food system completely and that will take sometime to understand.\n\nThis is a basic retrieve quest. Find the Berries listed.\n\nYou can find all the Berries within the spawn area that goes out 200 blocks in all directions.",
-      "isMain": false,
-      "isSilent": false,
-      "lockedProgress": false,
-      "simultaneous": false,
-      "globalParticipation": 0.0,
-      "globalQuest": false,
-      "globalShare": true,
-      "autoClaim": false,
-      "repeatTime": -1,
-      "sounds": {
-        "complete": "random.levelup",
-        "update": "random.levelup"
-      },
-      "logic": "AND",
-      "taskLogic": "AND",
-      "icon": {
-        "id": "Natura:berry",
-        "Count": 1,
-        "OreDict": "",
-        "Damage": 0
-      },
-      "visibility": "NORMAL",
-      "tasks": [
-        {
-          "partialMatch": true,
-          "ignoreNBT": false,
-          "consume": false,
-          "autoConsume": false,
-          "requiredItems": [
-            {
-              "id": "Natura:berry",
-              "Count": 1,
-              "OreDict": "",
-              "Damage": 0
-            },
-            {
-              "id": "Natura:berry",
-              "Count": 1,
-              "OreDict": "",
-              "Damage": 1
-            },
-            {
-              "id": "Natura:berry",
-              "Count": 1,
-              "OreDict": "",
-              "Damage": 3
-            },
-            {
-              "id": "Natura:berry",
-              "Count": 1,
-              "OreDict": "",
-              "Damage": 2
-            }
-          ],
-          "taskID": "bq_standard:retrieval"
-        }
-      ],
-      "rewards": [
-        {
-          "choices": [
-            {
-              "id": "Natura:berry",
-              "Count": 5,
-              "OreDict": "",
-              "Damage": 0
-            },
-            {
-              "id": "Natura:berry",
-              "Count": 5,
-              "OreDict": "",
-              "Damage": 1
-            },
-            {
-              "id": "Natura:berry",
-              "Count": 5,
-              "OreDict": "",
-              "Damage": 3
-            },
-            {
-              "id": "Natura:berry",
-              "Count": 5,
-              "OreDict": "",
-              "Damage": 2
-            }
-          ],
-          "rewardID": "bq_standard:choice"
-        }
-      ],
-      "preRequisites": [
-        1500
       ]
     },
     {
@@ -40442,182 +40923,8 @@
       ]
     },
     {
-      "questID": 1502,
-      "name": "Time to leave this place!",
-      "description": "You should now leave this are and explore the world. Go 200+ Blocks away from spawn and break some dirt!\n\nPlease Note:\n- We hope you will consider making a base at least 1,000 Blocks away from 0,0 (spawn).\n- We hope you will consider not building near another player under 400 blocks without their permission.\n\nDon\u0027t forget to use /help and have a fun and safe time.\n\nWarning: Don\u0027t venture at night for a while!",
-      "isMain": false,
-      "isSilent": false,
-      "lockedProgress": false,
-      "simultaneous": false,
-      "globalParticipation": 0.0,
-      "globalQuest": false,
-      "globalShare": true,
-      "autoClaim": false,
-      "repeatTime": -1,
-      "sounds": {
-        "complete": "random.levelup",
-        "update": "random.levelup"
-      },
-      "logic": "AND",
-      "taskLogic": "AND",
-      "icon": {
-        "id": "minecraft:dirt",
-        "Count": 1,
-        "OreDict": "",
-        "Damage": 0
-      },
-      "visibility": "NORMAL",
-      "tasks": [
-        {
-          "partialMatch": true,
-          "ignoreNBT": false,
-          "consume": true,
-          "autoConsume": false,
-          "requiredItems": [
-            {
-              "id": "minecraft:dirt",
-              "Count": 1,
-              "OreDict": "",
-              "Damage": 0
-            }
-          ],
-          "taskID": "bq_standard:retrieval"
-        }
-      ],
-      "rewards": [],
-      "preRequisites": [
-        1501
-      ]
-    },
-    {
-      "questID": 1503,
-      "name": "Portals??",
-      "description": "Overtime you might be asked about Portals and to build them. \n\nYou can\u0027t actually build portals on this server. Instead later on in the Stone Legion Quests you will get a quest when you have completed certain quests to unlock the portals themselves and go on an adventure. So keep an eye here in the future.\n\nYou are now done our Introduction Quests. Please go to Tier 0: It Begins Age!\n\n(To finish this Quest type just click the red x on the screen)",
-      "isMain": false,
-      "isSilent": false,
-      "lockedProgress": false,
-      "simultaneous": false,
-      "globalParticipation": 0.0,
-      "globalQuest": false,
-      "globalShare": true,
-      "autoClaim": false,
-      "repeatTime": -1,
-      "sounds": {
-        "complete": "random.levelup",
-        "update": "random.levelup"
-      },
-      "logic": "AND",
-      "taskLogic": "AND",
-      "icon": {
-        "id": "GraviSuite:BlockRelocatorPortal",
-        "Count": 1,
-        "OreDict": "",
-        "Damage": 0
-      },
-      "visibility": "NORMAL",
-      "tasks": [
-        {
-          "taskID": "bq_standard:checkbox"
-        }
-      ],
-      "rewards": [],
-      "preRequisites": [
-        1502
-      ]
-    },
-    {
-      "questID": 1504,
-      "name": "Nether Portal",
-      "description": "No Description",
-      "isMain": false,
-      "isSilent": false,
-      "lockedProgress": false,
-      "simultaneous": false,
-      "globalParticipation": 0.0,
-      "globalQuest": false,
-      "globalShare": true,
-      "autoClaim": false,
-      "repeatTime": -1,
-      "sounds": {
-        "complete": "random.levelup",
-        "update": "random.levelup"
-      },
-      "logic": "AND",
-      "taskLogic": "AND",
-      "icon": {
-        "id": "minecraft:flowing_lava",
-        "Count": 1,
-        "OreDict": "",
-        "Damage": 0
-      },
-      "visibility": "NORMAL",
-      "tasks": [],
-      "rewards": [],
-      "preRequisites": []
-    },
-    {
-      "questID": 1505,
-      "name": "Twilight Forest Portal",
-      "description": "No Description",
-      "isMain": false,
-      "isSilent": false,
-      "lockedProgress": false,
-      "simultaneous": false,
-      "globalParticipation": 0.0,
-      "globalQuest": false,
-      "globalShare": true,
-      "autoClaim": false,
-      "repeatTime": -1,
-      "sounds": {
-        "complete": "random.levelup",
-        "update": "random.levelup"
-      },
-      "logic": "AND",
-      "taskLogic": "AND",
-      "icon": {
-        "id": "EnderIO:blockLiquid_sunshine",
-        "Count": 1,
-        "OreDict": "",
-        "Damage": 0
-      },
-      "visibility": "NORMAL",
-      "tasks": [],
-      "rewards": [],
-      "preRequisites": []
-    },
-    {
-      "questID": 1506,
-      "name": "The End Portal",
-      "description": "No Description",
-      "isMain": false,
-      "isSilent": false,
-      "lockedProgress": false,
-      "simultaneous": false,
-      "globalParticipation": 0.0,
-      "globalQuest": false,
-      "globalShare": true,
-      "autoClaim": false,
-      "repeatTime": -1,
-      "sounds": {
-        "complete": "random.levelup",
-        "update": "random.levelup"
-      },
-      "logic": "AND",
-      "taskLogic": "AND",
-      "icon": {
-        "id": "TConstruct:fluid.ender",
-        "Count": 1,
-        "OreDict": "",
-        "Damage": 0
-      },
-      "visibility": "NORMAL",
-      "tasks": [],
-      "rewards": [],
-      "preRequisites": []
-    },
-    {
-      "questID": 1507,
-      "name": "Where is my Willagers?",
+      "questID": 530,
+      "name": "New Quest",
       "description": "No Description",
       "isMain": false,
       "isSilent": false,
