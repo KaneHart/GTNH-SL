@@ -36259,6 +36259,42 @@
       ]
     },
     {
+      "questID": 1503,
+      "name": "Portals??",
+      "description": "Overtime you might be asked about Portals and to build them. \n\nYou can\u0027t actually build portals on this server. Instead later on in the Stone Legion Quests you will get a quest when you have completed certain quests to unlock the portals themselves and go on an adventure. So keep an eye here in the future.\n\nYou are now done our Introduction Quests. Please go to Tier 0: It Begins Age!\n\n(To finish this Quest type just click the red x on the screen)",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "TwilightForest:tile.TFPortal",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "taskID": "bq_standard:checkbox"
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        1502
+      ]
+    },
+    {
       "questID": 479,
       "name": "THE NETHER",
       "description": "Now more dangerous with Extra Hardcore Infernal Mobs. Have fun and take care.\n\nWARNING: You Can\u0027t Build The Portal. Check Stone Legion Section once you completed it.",
@@ -36416,42 +36452,6 @@
       ],
       "preRequisites": [
         478
-      ]
-    },
-    {
-      "questID": 1503,
-      "name": "Portals??",
-      "description": "Overtime you might be asked about Portals and to build them. \n\nYou can\u0027t actually build portals on this server. Instead later on in the Stone Legion Quests you will get a quest when you have completed certain quests to unlock the portals themselves and go on an adventure. So keep an eye here in the future.\n\nYou are now done our Introduction Quests. Please go to Tier 0: It Begins Age!\n\n(To finish this Quest type just click the red x on the screen)",
-      "isMain": false,
-      "isSilent": false,
-      "lockedProgress": false,
-      "simultaneous": false,
-      "globalParticipation": 0.0,
-      "globalQuest": false,
-      "globalShare": true,
-      "autoClaim": false,
-      "repeatTime": -1,
-      "sounds": {
-        "complete": "random.levelup",
-        "update": "random.levelup"
-      },
-      "logic": "AND",
-      "taskLogic": "AND",
-      "icon": {
-        "id": "TwilightForest:tile.TFPortal",
-        "Count": 1,
-        "OreDict": "",
-        "Damage": 0
-      },
-      "visibility": "UNLOCKED",
-      "tasks": [
-        {
-          "taskID": "bq_standard:checkbox"
-        }
-      ],
-      "rewards": [],
-      "preRequisites": [
-        1502
       ]
     },
     {
@@ -36613,42 +36613,6 @@
       ]
     },
     {
-      "questID": 481,
-      "name": "Creosote Oil",
-      "description": "I guess you already processed a bit of wood into charcoal and wonder what you can do with all this Creosote Oil? \nWell you can burn it in the normal furnace to cook your food or you can make more torches with it. Later in the LV age you probably should run Diesel Generators with it.",
-      "isMain": false,
-      "isSilent": false,
-      "lockedProgress": false,
-      "simultaneous": false,
-      "globalParticipation": 0.0,
-      "globalQuest": false,
-      "globalShare": true,
-      "autoClaim": false,
-      "repeatTime": -1,
-      "sounds": {
-        "complete": "random.levelup",
-        "update": "random.levelup"
-      },
-      "logic": "AND",
-      "taskLogic": "AND",
-      "icon": {
-        "id": "Railcraft:fluid.creosote.bucket",
-        "Count": 1,
-        "OreDict": "",
-        "Damage": 0
-      },
-      "visibility": "UNLOCKED",
-      "tasks": [
-        {
-          "taskID": "bq_standard:checkbox"
-        }
-      ],
-      "rewards": [],
-      "preRequisites": [
-        24
-      ]
-    },
-    {
       "questID": 1505,
       "name": "Twilight Forest Portal",
       "description": "Where I come from Vampires don\u0027t sparkle and fairy tales don\u0027t exist. Well this story has a one happy ending as there is a Fairy Tale called Twilight Forest. \n\nSomewhere far North East of the Light House there is rumors to be a special portal in a tree that can take you away to this Fairy Tale World. \n\nSome the rumors also included that you should being an aluminium dust with you.",
@@ -36714,6 +36678,42 @@
       "preRequisites": [
         1503,
         103
+      ]
+    },
+    {
+      "questID": 481,
+      "name": "Creosote Oil",
+      "description": "I guess you already processed a bit of wood into charcoal and wonder what you can do with all this Creosote Oil? \nWell you can burn it in the normal furnace to cook your food or you can make more torches with it. Later in the LV age you probably should run Diesel Generators with it.",
+      "isMain": false,
+      "isSilent": false,
+      "lockedProgress": false,
+      "simultaneous": false,
+      "globalParticipation": 0.0,
+      "globalQuest": false,
+      "globalShare": true,
+      "autoClaim": false,
+      "repeatTime": -1,
+      "sounds": {
+        "complete": "random.levelup",
+        "update": "random.levelup"
+      },
+      "logic": "AND",
+      "taskLogic": "AND",
+      "icon": {
+        "id": "Railcraft:fluid.creosote.bucket",
+        "Count": 1,
+        "OreDict": "",
+        "Damage": 0
+      },
+      "visibility": "UNLOCKED",
+      "tasks": [
+        {
+          "taskID": "bq_standard:checkbox"
+        }
+      ],
+      "rewards": [],
+      "preRequisites": [
+        24
       ]
     },
     {
