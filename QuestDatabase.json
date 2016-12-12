@@ -4145,7 +4145,8 @@
         }
       ],
       "preRequisites": [
-        49
+        49,
+        495
       ]
     },
     {
@@ -36569,7 +36570,7 @@
         "OreDict": "",
         "Damage": 0
       },
-      "visibility": "HIDDEN",
+      "visibility": "UNLOCKED",
       "tasks": [
         {
           "name": "Nether Portal",
@@ -36609,7 +36610,7 @@
       ],
       "preRequisites": [
         1503,
-        479
+        478
       ]
     },
     {
@@ -36637,7 +36638,7 @@
         "OreDict": "",
         "Damage": 0
       },
-      "visibility": "HIDDEN",
+      "visibility": "UNLOCKED",
       "tasks": [
         {
           "name": "Twilight Forest",
@@ -36911,7 +36912,7 @@
         "OreDict": "",
         "Damage": 0
       },
-      "visibility": "HIDDEN",
+      "visibility": "UNLOCKED",
       "tasks": [
         {
           "name": "End Portal",
