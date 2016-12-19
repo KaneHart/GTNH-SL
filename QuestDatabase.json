@@ -36548,7 +36548,7 @@
     {
       "questID": 1504,
       "name": "Nether Portal",
-      "description": "Now more dangerous with Extra Hardcore Infernal Mobs. Have fun and take care.\n\nYou should explore somewhere south west of the Light House far away and look for the Nether Portal. The legend is told you need to bring a flint and steel with you.",
+      "description": "Now more dangerous with Extra Hardcore Infernal Mobs. Have fun and take care.\n\nYou should explore somewhere south west of the Light House far away and look for the Nether Portal. The legend is told you need to bring a [Steel Ingot] with you.",
       "isMain": false,
       "isSilent": false,
       "lockedProgress": false,
